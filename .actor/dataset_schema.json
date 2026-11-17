@@ -1,0 +1,111 @@
+{
+  "actorSpecification": 1,
+  "fields": {
+    "type": "object",
+    "properties": {
+      "schema_version": {
+        "type": "string"
+      },
+      "tool": {
+        "type": "object"
+      },
+      "observed_at": {
+        "type": "string"
+      },
+      "input": {
+        "type": "object"
+      },
+      "manifest": {
+        "type": "object"
+      },
+      "request_budget": {
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "summary": {
+        "type": "object"
+      },
+      "findings": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      },
+      "resolutions": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      },
+      "candidates": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      },
+      "warnings": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "required": [
+      "schema_version",
+      "tool",
+      "observed_at",
+      "input",
+      "findings",
+      "resolutions",
+      "candidates"
+    ]
+  },
+  "views": {
+    "overview": {
+      "title": "Evidence-preserving reports",
+      "transformation": {
+        "fields": [
+          "observed_at",
+          "input",
+          "summary",
+          "request_budget",
+          "findings",
+          "resolutions",
+          "candidates",
+          "warnings"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "observed_at": {
+            "label": "Observed at"
+          },
+          "input": {
+            "label": "Input"
+          },
+          "summary": {
+            "label": "Status summary"
+          },
+          "request_budget": {
+            "label": "Request budget"
+          },
+          "findings": {
+            "label": "Findings and evidence"
+          },
+          "resolutions": {
+            "label": "Source resolutions"
+          },
+          "candidates": {
+            "label": "Candidate origins"
+          },
+          "warnings": {
+            "label": "Warnings"
+          }
+        }
+      }
+    }
+  }
+}

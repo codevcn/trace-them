@@ -1,0 +1,2411 @@
+{
+  "schema_version": "1.0",
+  "scope": "static audit; not a live accuracy certification",
+  "targets": {
+    "1337x": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.1337x.to/user/{}/"
+    },
+    "2Dimensions": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://2Dimensions.com/a/{}"
+    },
+    "7Cups": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.7cups.com/@{}"
+    },
+    "9GAG": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.9gag.com/u/{}"
+    },
+    "APClips": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://apclips.com/{}"
+    },
+    "About.me": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://about.me/{}"
+    },
+    "Academia.edu": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://independent.academia.edu/{}"
+    },
+    "AdmireMe.Vip": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://admireme.vip/{}"
+    },
+    "Airbit": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://airbit.com/{}"
+    },
+    "Airliners": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.airliners.net/user/{}/profile/photos"
+    },
+    "All Things Worn": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.allthingsworn.com/profile/{}"
+    },
+    "AllMyLinks": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://allmylinks.com/{}"
+    },
+    "AniWorld": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://aniworld.to/user/profil/{}"
+    },
+    "Anilist": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://graphql.anilist.co/"
+    },
+    "Apple Developer": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://developer.apple.com/forums/profile/{}"
+    },
+    "Apple Discussions": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://discussions.apple.com/profile/{}"
+    },
+    "Aparat": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.aparat.com/api/fa/v1/user/user/information/username/{}"
+    },
+    "Archive of Our Own": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://archiveofourown.org/users/{}"
+    },
+    "Archive.org": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://archive.org/details/@{}?noscript=true"
+    },
+    "Arduino Forum": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://forum.arduino.cc/u/{}/summary"
+    },
+    "ArtStation": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.artstation.com/users/{}.json"
+    },
+    "Asciinema": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://asciinema.org/~{}"
+    },
+    "Ask Fedora": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://ask.fedoraproject.org/u/{}"
+    },
+    "Atcoder": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://atcoder.jp/users/{}"
+    },
+    "Vjudge": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://VJudge.net/user/{}"
+    },
+    "Audiojungle": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://audiojungle.net/user/{}"
+    },
+    "Autofrage": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.autofrage.net/nutzer/{}"
+    },
+    "Avizo": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.avizo.cz/{}/"
+    },
+    "AWS Skills Profile": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://skillsprofile.skillbuilder.aws/user/{}/"
+    },
+    "BOOTH": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://{}.booth.pm/"
+    },
+    "Bandcamp": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.bandcamp.com/{}"
+    },
+    "Bazar.cz": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.bazar.cz/{}/"
+    },
+    "Behance": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.behance.net/{}"
+    },
+    "Bezuzyteczna": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://bezuzyteczna.pl/uzytkownicy/{}"
+    },
+    "BiggerPockets": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.biggerpockets.com/users/{}"
+    },
+    "BioHacking": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://forum.dangerousthings.com/u/{}"
+    },
+    "BitBucket": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://bitbucket.org/{}/"
+    },
+    "Bitwarden Forum": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://community.bitwarden.com/u/{}/summary"
+    },
+    "Blipfoto": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.blipfoto.com/{}"
+    },
+    "Blitz Tactics": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://blitztactics.com/{}"
+    },
+    "Blogger": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://{}.blogspot.com"
+    },
+    "Bluesky": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor={}.bsky.social"
+    },
+    "BongaCams": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://pt.bongacams.com/profile/{}"
+    },
+    "Bookcrossing": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.bookcrossing.com/mybookshelf/{}/"
+    },
+    "BoardGameGeek": {
+      "classification": "excluded",
+      "reason": "Registration username validation endpoint",
+      "probe_url": "https://api.geekdo.com/api/accounts/validate/username?username={}"
+    },
+    "BraveCommunity": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://community.brave.com/u/{}/"
+    },
+    "BreachSta.rs Forum": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://breachsta.rs/profile/{}"
+    },
+    "BugCrowd": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://bugcrowd.com/{}"
+    },
+    "BuyMeACoffee": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.buymeacoffee.com/{}"
+    },
+    "BuzzFeed": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://buzzfeed.com/{}"
+    },
+    "Cfx.re Forum": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://forum.cfx.re/u/{}/summary"
+    },
+    "CGTrader": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.cgtrader.com/{}"
+    },
+    "CNET": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.cnet.com/profiles/{}/"
+    },
+    "CSSBattle": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://cssbattle.dev/player/{}"
+    },
+    "CTAN": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://ctan.org/author/{}"
+    },
+    "Caddy Community": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://caddy.community/u/{}/summary"
+    },
+    "Car Talk Community": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://community.cartalk.com/u/{}/summary"
+    },
+    "Carbonmade": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://{}.carbonmade.com"
+    },
+    "Carrd": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://{}.carrd.co/"
+    },
+    "Career.habr": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://career.habr.com/{}"
+    },
+    "CashApp": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://cash.app/${}"
+    },
+    "Championat": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.championat.com/user/{}"
+    },
+    "Chaos": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://chaos.social/@{}"
+    },
+    "Chatujme.cz": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://profil.chatujme.cz/{}"
+    },
+    "ChaturBate": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://chaturbate.com/{}"
+    },
+    "Chess": {
+      "classification": "excluded",
+      "reason": "Username validation endpoint rather than public profile data",
+      "probe_url": "https://www.chess.com/callback/user/valid?username={}"
+    },
+    "Choice Community": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://choice.community/u/{}/summary"
+    },
+    "Clapper": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://clapperapp.com/{}"
+    },
+    "CloudflareCommunity": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://community.cloudflare.com/u/{}"
+    },
+    "Clozemaster": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.clozemaster.com/players/{}"
+    },
+    "Clubhouse": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.clubhouse.com/@{}"
+    },
+    "Code Snippet Wiki": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://codesnippets.fandom.com/wiki/User:{}"
+    },
+    "Codeberg": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://codeberg.org/{}"
+    },
+    "Codecademy": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.codecademy.com/profiles/{}"
+    },
+    "Codechef": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.codechef.com/users/{}"
+    },
+    "Codeforces": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://codeforces.com/api/user.info?handles={}"
+    },
+    "Codepen": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://codepen.io/{}"
+    },
+    "Coders Rank": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://profile.codersrank.io/user/{}/"
+    },
+    "Coderwall": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://coderwall.com/{}"
+    },
+    "CodeSandbox": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://codesandbox.io/api/v1/users/{}"
+    },
+    "Codewars": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.codewars.com/users/{}"
+    },
+    "Codolio": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://codolio.com/profile/{}"
+    },
+    "Coinvote": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://coinvote.cc/profile/{}"
+    },
+    "ColourLovers": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.colourlovers.com/lover/{}"
+    },
+    "Contently": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://{}.contently.com/"
+    },
+    "Coroflot": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.coroflot.com/{}"
+    },
+    "Cplusplus": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://cplusplus.com/user/{}"
+    },
+    "Cracked": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.cracked.com/members/{}/"
+    },
+    "Cracked Forum": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://cracked.ax/{}"
+    },
+    "Credly": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.credly.com/users/{}"
+    },
+    "Crevado": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://{}.crevado.com"
+    },
+    "Crowdin": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://crowdin.com/profile/{}"
+    },
+    "CryptoHack": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://cryptohack.org/user/{}/"
+    },
+    "Cryptomator Forum": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://community.cryptomator.org/u/{}"
+    },
+    "Cults3D": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://cults3d.com/en/users/{}/creations"
+    },
+    "CyberDefenders": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://cyberdefenders.org/p/{}"
+    },
+    "DEV Community": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://dev.to/{}"
+    },
+    "DMOJ": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://dmoj.ca/user/{}"
+    },
+    "DailyMotion": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.dailymotion.com/{}"
+    },
+    "dcinside": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://gallog.dcinside.com/{}"
+    },
+    "Dealabs": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.dealabs.com/profile/{}"
+    },
+    "DeviantArt": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.deviantart.com/{}"
+    },
+    "DigitalSpy": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://forums.digitalspy.com/profile/{}"
+    },
+    "Discogs": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.discogs.com/user/{}"
+    },
+    "Discord": {
+      "classification": "excluded",
+      "reason": "Unauthenticated registration username-attempt endpoint",
+      "probe_url": "https://discord.com/api/v9/unique-username/username-attempt-unauthed"
+    },
+    "Discord.bio": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://discords.com/api-v2/bio/details/{}"
+    },
+    "Discuss.Elastic.co": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://discuss.elastic.co/u/{}"
+    },
+    "Diskusjon.no": {
+      "classification": "excluded",
+      "reason": "Registration usernameExists endpoint",
+      "probe_url": "https://www.diskusjon.no/?app=core&module=system&controller=ajax&do=usernameExists&input={}"
+    },
+    "Disqus": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://disqus.com/{}"
+    },
+    "Docker Hub": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://hub.docker.com/v2/users/{}/"
+    },
+    "Dribbble": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://dribbble.com/{}"
+    },
+    "Duolingo": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.duolingo.com/2017-06-30/users?username={}"
+    },
+    "Eintracht Frankfurt Forum": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://community.eintracht.de/fans/{}"
+    },
+    "Empretienda AR": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://{}.empretienda.com.ar"
+    },
+    "Envato Forum": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://forums.envato.com/u/{}"
+    },
+    "Erome": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.erome.com/{}"
+    },
+    "Exposure": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://{}.exposure.co/"
+    },
+    "exophase": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.exophase.com/user/{}/"
+    },
+    "EyeEm": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.eyeem.com/u/{}"
+    },
+    "F3.cool": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://f3.cool/{}/"
+    },
+    "Fameswap": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://fameswap.com/user/{}"
+    },
+    "Fandom": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.fandom.com/u/{}"
+    },
+    "Fanpop": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.fanpop.com/fans/{}"
+    },
+    "Finanzfrage": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.finanzfrage.net/nutzer/{}"
+    },
+    "Flickr": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.flickr.com/people/{}"
+    },
+    "Flightradar24": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://my.flightradar24.com/{}"
+    },
+    "Flipboard": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://flipboard.com/@{}"
+    },
+    "Football": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.rusfootball.info/user/{}/"
+    },
+    "FortniteTracker": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://fortnitetracker.com/profile/all/{}"
+    },
+    "Forum Ophilia": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.forumophilia.com/profile.php?mode=viewprofile&u={}"
+    },
+    "Fosstodon": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://fosstodon.org/@{}"
+    },
+    "Framapiaf": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://framapiaf.org/@{}"
+    },
+    "Freelancer": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.freelancer.com/api/users/0.1/users?usernames%5B%5D={}&compact=true"
+    },
+    "Freesound": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://freesound.org/people/{}/"
+    },
+    "GNOME VCS": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://gitlab.gnome.org/{}"
+    },
+    "GaiaOnline": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.gaiaonline.com/profiles/{}"
+    },
+    "Gamespot": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.gamespot.com/profile/{}/"
+    },
+    "GameFAQs": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://gamefaqs.gamespot.com/community/{}"
+    },
+    "GeeksforGeeks": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://auth.geeksforgeeks.org/user/{}"
+    },
+    "Genius (Artists)": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://genius.com/artists/{}"
+    },
+    "Genius (Users)": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://genius.com/{}"
+    },
+    "Gesundheitsfrage": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.gesundheitsfrage.net/nutzer/{}"
+    },
+    "GetMyUni": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.getmyuni.com/user/{}"
+    },
+    "Giant Bomb": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.giantbomb.com/profile/{}/"
+    },
+    "Giphy": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://giphy.com/{}"
+    },
+    "GitBook": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://{}.gitbook.io/"
+    },
+    "GitHub": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.github.com/{}"
+    },
+    "Warframe Market": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://api.warframe.market/v2/user/{}"
+    },
+    "GitLab": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://gitlab.com/api/v4/users?username={}"
+    },
+    "Gitea": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://gitea.com/{}"
+    },
+    "Gitee": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://gitee.com/{}"
+    },
+    "GoodReads": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.goodreads.com/{}"
+    },
+    "Google Play": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://play.google.com/store/apps/developer?id={}"
+    },
+    "Gradle": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://plugins.gradle.org/u/{}"
+    },
+    "Grailed": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.grailed.com/{}"
+    },
+    "Gravatar": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "http://en.gravatar.com/{}"
+    },
+    "Gumroad": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.gumroad.com/{}"
+    },
+    "Gutefrage": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.gutefrage.net/nutzer/{}"
+    },
+    "HackTheBox": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://forum.hackthebox.com/u/{}"
+    },
+    "Hackaday": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://hackaday.io/{}"
+    },
+    "HackenProof (Hackers)": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://hackenproof.com/hackers/{}"
+    },
+    "HackerEarth": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://hackerearth.com/@{}"
+    },
+    "HackerNews": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://news.ycombinator.com/user?id={}"
+    },
+    "HackerOne": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://hackerone.com/{}"
+    },
+    "HackerRank": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://hackerrank.com/{}"
+    },
+    "HackerSploit": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://forum.hackersploit.org/u/{}"
+    },
+    "HackMD": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://hackmd.io/@{}"
+    },
+    "Harvard Scholar": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://scholar.harvard.edu/{}"
+    },
+    "Hashnode": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://hashnode.com/@{}"
+    },
+    "Heavy-R": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.heavy-r.com/user/{}"
+    },
+    "Hive Blog": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://hive.blog/@{}"
+    },
+    "Holopin": {
+      "classification": "excluded",
+      "reason": "Authentication username validation endpoint",
+      "probe_url": "https://www.holopin.io/api/auth/username"
+    },
+    "Houzz": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://houzz.com/user/{}"
+    },
+    "HubPages": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://hubpages.com/@{}"
+    },
+    "Hubski": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://hubski.com/user/{}"
+    },
+    "HudsonRock": {
+      "classification": "excluded",
+      "reason": "Breach-associated lookup rather than a public profile source",
+      "probe_url": "https://cavalier.hudsonrock.com/api/json/v2/osint-tools/search-by-username?username={}"
+    },
+    "Hugging Face": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://huggingface.co/{}"
+    },
+    "IFTTT": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.ifttt.com/p/{}"
+    },
+    "Ifunny": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://ifunny.co/user/{}"
+    },
+    "IRC-Galleria": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://irc-galleria.net/user/{}"
+    },
+    "Icons8 Community": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://community.icons8.com/u/{}/summary"
+    },
+    "Image Fap": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.imagefap.com/profile/{}"
+    },
+    "ImgUp.cz": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://imgup.cz/{}"
+    },
+    "Imgur": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://api.imgur.com/account/v1/accounts/{}?client_id=546c25a59c58ad7"
+    },
+    "imood": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.imood.com/users/{}"
+    },
+    "Instagram": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://imginn.com/{}"
+    },
+    "Instapaper": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.instapaper.com/p/{}"
+    },
+    "Instructables": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.instructables.com/json-api/showAuthorExists?screenName={}"
+    },
+    "Intigriti": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://api.intigriti.com/user/public/profile/{}"
+    },
+    "Ionic Forum": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://forum.ionicframework.com/u/{}"
+    },
+    "Issuu": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://issuu.com/{}"
+    },
+    "Itch.io": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://{}.itch.io/"
+    },
+    "Itemfix": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.itemfix.com/c/{}"
+    },
+    "Jellyfin Weblate": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://translate.jellyfin.org/user/{}/"
+    },
+    "Jimdo": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://{}.jimdosite.com"
+    },
+    "Joplin Forum": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://discourse.joplinapp.org/u/{}"
+    },
+    "Jupyter Community Forum": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://discourse.jupyter.org/u/{}/summary"
+    },
+    "Kaggle": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.kaggle.com/{}"
+    },
+    "kaskus": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.kaskus.co.id/api/users?username={}"
+    },
+    "Keybase": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://keybase.io/{}"
+    },
+    "Kick": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://kick.com/api/v2/channels/{}"
+    },
+    "Kik": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://ws2.kik.com/user/{}"
+    },
+    "Kongregate": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.kongregate.com/accounts/{}"
+    },
+    "Kvinneguiden": {
+      "classification": "excluded",
+      "reason": "Registration usernameExists endpoint",
+      "probe_url": "https://forum.kvinneguiden.no/?app=core&module=system&controller=ajax&do=usernameExists&input={}"
+    },
+    "LOR": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.linux.org.ru/people/{}/profile"
+    },
+    "Laracast": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://laracasts.com/@{}"
+    },
+    "Launchpad": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://launchpad.net/~{}"
+    },
+    "LeetCode": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://leetcode.com/{}"
+    },
+    "LemmyWorld": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://lemmy.world/u/{}"
+    },
+    "LessWrong": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.lesswrong.com/users/{}"
+    },
+    "Letterboxd": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://letterboxd.com/{}"
+    },
+    "LibraryThing": {
+      "classification": "excluded",
+      "reason": "Legacy probe uses a manufactured human-verification cookie",
+      "probe_url": "https://www.librarything.com/profile/{}"
+    },
+    "Lichess": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://lichess.org/@/{}"
+    },
+    "LinkedIn": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://linkedin.com/in/{}"
+    },
+    "Linktree": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://linktr.ee/{}"
+    },
+    "LinuxFR.org": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://linuxfr.org/users/{}"
+    },
+    "Listed": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://listed.to/@{}"
+    },
+    "LiveJournal": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://{}.livejournal.com"
+    },
+    "Lobsters": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://lobste.rs/u/{}"
+    },
+    "LottieFiles": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://lottiefiles.com/{}"
+    },
+    "LushStories": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.lushstories.com/profile/{}"
+    },
+    "MMORPG Forum": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://forums.mmorpg.com/profile/{}"
+    },
+    "Mamot": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://mamot.fr/@{}"
+    },
+    "Medium": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://medium.com/feed/@{}"
+    },
+    "Memrise": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.memrise.com/user/{}/"
+    },
+    "Minecraft": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://api.mojang.com/users/profiles/minecraft/{}"
+    },
+    "MixCloud": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://api.mixcloud.com/{}/"
+    },
+    "Monkeytype": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://api.monkeytype.com/users/{}/profile"
+    },
+    "Motherless": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://motherless.com/m/{}"
+    },
+    "Motorradfrage": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.motorradfrage.net/nutzer/{}"
+    },
+    "MuseScore": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://musescore.com/{}"
+    },
+    "MyAnimeList": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://myanimelist.net/profile/{}"
+    },
+    "MyMiniFactory": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.myminifactory.com/users/{}"
+    },
+    "Mydramalist": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.mydramalist.com/profile/{}"
+    },
+    "Myspace": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://myspace.com/{}"
+    },
+    "NICommunityForum": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://community.native-instruments.com/profile/{}"
+    },
+    "namuwiki": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://namu.wiki/w/%EC%82%AC%EC%9A%A9%EC%9E%90:{}"
+    },
+    "NationStates Nation": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://nationstates.net/nation={}"
+    },
+    "NationStates Region": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://nationstates.net/region={}"
+    },
+    "Naver": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://blog.naver.com/{}"
+    },
+    "Needrom": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.needrom.com/author/{}/"
+    },
+    "Newgrounds": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://{}.newgrounds.com"
+    },
+    "Nextcloud Forum": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://help.nextcloud.com/u/{}/summary"
+    },
+    "Nightbot": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://api.nightbot.tv/1/channels/t/{}"
+    },
+    "Ninja Kiwi": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://ninjakiwi.com/profile/{}"
+    },
+    "NintendoLife": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.nintendolife.com/users/{}"
+    },
+    "NitroType": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.nitrotype.com/racer/{}"
+    },
+    "NotABug.org": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://notabug.org/{}/followers"
+    },
+    "Nothing Community": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://nothing.community/u/{}"
+    },
+    "Nyaa.si": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://nyaa.si/user/{}"
+    },
+    "ObservableHQ": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://observablehq.com/@{}"
+    },
+    "Open Collective": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://opencollective.com/{}"
+    },
+    "OpenGameArt": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://opengameart.org/users/{}"
+    },
+    "OpenStreetMap": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.openstreetmap.org/user/{}"
+    },
+    "Odysee": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://odysee.com/@{}"
+    },
+    "Opensource": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://opensource.com/users/{}"
+    },
+    "OurDJTalk": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://ourdjtalk.com/members?username={}"
+    },
+    "Outgress": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://outgress.com/agents/{}"
+    },
+    "PCGamer": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://forums.pcgamer.com/members/?username={}"
+    },
+    "PSNProfiles.com": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://psnprofiles.com/{}"
+    },
+    "Packagist": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://packagist.org/packages/{}/"
+    },
+    "Pastebin": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://pastebin.com/u/{}"
+    },
+    "Patched": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://patched.sh/User/{}"
+    },
+    "Patreon": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.patreon.com/{}"
+    },
+    "PentesterLab": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://pentesterlab.com/profile/{}"
+    },
+    "HotUKdeals": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.hotukdeals.com/profile/{}"
+    },
+    "Mydealz": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.mydealz.de/profile/{}"
+    },
+    "Chollometro": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.chollometro.com/profile/{}"
+    },
+    "PepperNL": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://nl.pepper.com/profile/{}"
+    },
+    "PepperPL": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.pepper.pl/profile/{}"
+    },
+    "Preisjaeger": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.preisjaeger.at/profile/{}"
+    },
+    "Pepperdeals": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.pepperdeals.se/profile/{}"
+    },
+    "PepperealsUS": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.pepperdeals.com/profile/{}"
+    },
+    "Promodescuentos": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.promodescuentos.com/profile/{}"
+    },
+    "Periscope": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.periscope.tv/{}/"
+    },
+    "Pinkbike": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.pinkbike.com/u/{}/"
+    },
+    "pixelfed.social": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://pixelfed.social/{}/"
+    },
+    "PlayStore": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://play.google.com/store/apps/developer?id={}"
+    },
+    "Playstrategy": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://playstrategy.org/@/{}"
+    },
+    "Plurk": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.plurk.com/{}"
+    },
+    "PocketStars": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://pocketstars.com/{}"
+    },
+    "Pokemon Showdown": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://pokemonshowdown.com/users/{}"
+    },
+    "Polarsteps": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://api.polarsteps.com/users/byusername/{}"
+    },
+    "Polygon": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.polygon.com/users/{}"
+    },
+    "Polymart": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://polymart.org/user/{}"
+    },
+    "Pornhub": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://pornhub.com/users/{}"
+    },
+    "ProductHunt": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.producthunt.com/@{}"
+    },
+    "programming.dev": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://programming.dev/u/{}"
+    },
+    "Pychess": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.pychess.org/@/{}"
+    },
+    "PromoDJ": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "http://promodj.com/{}"
+    },
+    "Pronouns.page": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://pronouns.page/@{}"
+    },
+    "PyPi": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://pypi.org/_includes/administer-user-include/{}"
+    },
+    "Python.org Discussions": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://discuss.python.org/u/{}/summary"
+    },
+    "Rajce.net": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://{}.rajce.idnes.cz/"
+    },
+    "Rarible": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://rarible.com/marketplace/api/v4/urls/{}"
+    },
+    "Rate Your Music": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://rateyourmusic.com/~{}"
+    },
+    "Rclone Forum": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://forum.rclone.org/u/{}"
+    },
+    "RedTube": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.redtube.com/users/{}"
+    },
+    "Redbubble": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.redbubble.com/people/{}"
+    },
+    "Reddit": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.reddit.com/user/{}"
+    },
+    "Realmeye": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.realmeye.com/player/{}"
+    },
+    "Reisefrage": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.reisefrage.net/nutzer/{}"
+    },
+    "Replit.com": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://replit.com/@{}"
+    },
+    "ResearchGate": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.researchgate.net/profile/{}"
+    },
+    "ReverbNation": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.reverbnation.com/{}"
+    },
+    "Roblox": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.roblox.com/user.aspx?username={}"
+    },
+    "RocketTube": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.rockettube.com/{}"
+    },
+    "RoyalCams": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://royalcams.com/profile/{}"
+    },
+    "Ruby Forums": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://ruby-forum.com/u/{}/summary"
+    },
+    "RubyGems": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://rubygems.org/profiles/{}"
+    },
+    "Rumble": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://rumble.com/user/{}"
+    },
+    "RuneScape": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://apps.runescape.com/runemetrics/profile/profile?user={}"
+    },
+    "SWAPD": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://swapd.co/u/{}"
+    },
+    "Sbazar.cz": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.sbazar.cz/{}"
+    },
+    "Scratch": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://scratch.mit.edu/users/{}"
+    },
+    "Scribd": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.scribd.com/{}"
+    },
+    "SEOForum": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://seoforum.com/@{}"
+    },
+    "Shelf": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.shelf.im/{}"
+    },
+    "ShitpostBot5000": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.shitpostbot.com/user/{}"
+    },
+    "Signal": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://community.signalusers.org/u/{}"
+    },
+    "Sketchfab": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://sketchfab.com/{}"
+    },
+    "Slack": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://{}.slack.com"
+    },
+    "Slant": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.slant.co/users/{}"
+    },
+    "Slashdot": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://slashdot.org/~{}"
+    },
+    "SlideShare": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://slideshare.net/{}"
+    },
+    "Slides": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://slides.com/{}"
+    },
+    "SmugMug": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://{}.smugmug.com"
+    },
+    "Smule": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.smule.com/{}"
+    },
+    "Snapchat": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.snapchat.com/add/{}"
+    },
+    "SOOP": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://api-channel.sooplive.co.kr/v1.1/channel/{}/station"
+    },
+    "SoundCloud": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://soundcloud.com/{}"
+    },
+    "SourceForge": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://sourceforge.net/u/{}"
+    },
+    "SpaceHey": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://spacehey.com/{}"
+    },
+    "SoylentNews": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://soylentnews.org/~{}"
+    },
+    "SpeakerDeck": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://speakerdeck.com/{}"
+    },
+    "Speedrun.com": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://speedrun.com/users/{}"
+    },
+    "Spells8": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://forum.spells8.com/u/{}"
+    },
+    "Splice": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://splice.com/{}"
+    },
+    "Splits.io": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://splits.io/users/{}"
+    },
+    "Sporcle": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.sporcle.com/user/{}/people"
+    },
+    "Sportlerfrage": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.sportlerfrage.net/nutzer/{}"
+    },
+    "SportsRU": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.sports.ru/profile/{}/"
+    },
+    "Spotify": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://open.spotify.com/user/{}"
+    },
+    "Star Citizen": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://robertsspaceindustries.com/citizens/{}"
+    },
+    "Status Cafe": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://status.cafe/users/{}"
+    },
+    "Steam Community (Group)": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://steamcommunity.com/groups/{}"
+    },
+    "Steam Community (User)": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://steamcommunity.com/id/{}/"
+    },
+    "Strava": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.strava.com/athletes/{}"
+    },
+    "Substack": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://{}.substack.com/"
+    },
+    "SublimeForum": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://forum.sublimetext.com/u/{}"
+    },
+    "TETR.IO": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://ch.tetr.io/api/users/{}"
+    },
+    "TheMovieDB": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.themoviedb.org/u/{}"
+    },
+    "TikTok": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.tiktok.com/@{}"
+    },
+    "Tiendanube": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://{}.mitiendanube.com/"
+    },
+    "Topcoder": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://api.topcoder.com/v5/members/{}"
+    },
+    "Topmate": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://topmate.io/{}"
+    },
+    "TRAKTRAIN": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://traktrain.com/{}"
+    },
+    "Telegram": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://t.me/{}"
+    },
+    "Tellonym.me": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://tellonym.me/{}"
+    },
+    "Tenor": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://tenor.com/users/{}"
+    },
+    "Terraria Forums": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://forums.terraria.org/index.php?search/42798315/&c[users]={}&o=relevance"
+    },
+    "ThemeForest": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://themeforest.net/user/{}"
+    },
+    "tistory": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://{}.tistory.com/"
+    },
+    "TnAFlix": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.tnaflix.com/profile/{}"
+    },
+    "TradingView": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.tradingview.com/u/{}/"
+    },
+    "Trakt": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.trakt.tv/users/{}"
+    },
+    "TrashboxRU": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://trashbox.ru/users/{}"
+    },
+    "Trawelling": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://traewelling.de/@{}"
+    },
+    "Trello": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://trello.com/1/Members/{}"
+    },
+    "TryHackMe": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://tryhackme.com/api/user/exist/{}"
+    },
+    "Tuna": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://tuna.voicemod.net/user/{}"
+    },
+    "Tweakers": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://tweakers.net/gallery/{}"
+    },
+    "Twitch": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.twitch.tv/{}"
+    },
+    "Trovo": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://trovo.live/s/{}/"
+    },
+    "Twitter": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://nitter.privacydev.net/{}"
+    },
+    "Typeracer": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://data.typeracer.com/pit/profile?user={}"
+    },
+    "Ultimate-Guitar": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://ultimate-guitar.com/u/{}"
+    },
+    "Unsplash": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://unsplash.com/@{}"
+    },
+    "Untappd": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://untappd.com/user/{}"
+    },
+    "Valorant Forums": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://valorantforums.com/u/{}"
+    },
+    "VK": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://vk.com/{}"
+    },
+    "VSCO": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://vsco.co/{}"
+    },
+    "Velog": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://velog.io/@{}/posts"
+    },
+    "Velomania": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://forum.velomania.ru/member.php?username={}"
+    },
+    "Venmo": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://test1.venmo.com/u/{}"
+    },
+    "Vero": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://vero.co/{}"
+    },
+    "Vimeo": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://vimeo.com/{}"
+    },
+    "VirusTotal": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.virustotal.com/ui/users/{}/avatar"
+    },
+    "VLR": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.vlr.gg/user/{}"
+    },
+    "WICG Forum": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://discourse.wicg.io/u/{}/summary"
+    },
+    "Wakatime": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://wakatime.com/@{}"
+    },
+    "Warrior Forum": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.warriorforum.com/members/{}.html"
+    },
+    "Wattpad": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.wattpad.com/api/v3/users/{}/"
+    },
+    "WebNode": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://{}.webnode.cz/"
+    },
+    "Weblate": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://hosted.weblate.org/user/{}/"
+    },
+    "Weebly": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://{}.weebly.com/"
+    },
+    "Wikidot": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "http://www.wikidot.com/user:info/{}"
+    },
+    "Wikipedia": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://en.wikipedia.org/wiki/Special:CentralAuth/{}?uselang=qqx"
+    },
+    "Windy": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://community.windy.com/user/{}"
+    },
+    "Wix": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://{}.wix.com"
+    },
+    "WolframalphaForum": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://community.wolfram.com/web/{}/home"
+    },
+    "WordPress": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://{}.wordpress.com/"
+    },
+    "WordPressOrg": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://profiles.wordpress.org/{}/"
+    },
+    "Wordnik": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.wordnik.com/users/{}"
+    },
+    "Wykop": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.wykop.pl/ludzie/{}"
+    },
+    "Xbox Gamertag": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://xboxgamertag.com/search/{}"
+    },
+    "Xvideos": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://xvideos.com/profiles/{}"
+    },
+    "YandexMusic": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://music.yandex/users/{}/playlists"
+    },
+    "YouNow": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://api.younow.com/php/api/broadcast/info/user={}/"
+    },
+    "YouPic": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://youpic.com/photographer/{}/"
+    },
+    "YouPorn": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://youporn.com/uservids/{}"
+    },
+    "YouTube": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.youtube.com/@{}"
+    },
+    "akniga": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://akniga.org/profile/{}"
+    },
+    "authorSTREAM": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "http://www.authorstream.com/{}/"
+    },
+    "babyblogRU": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.babyblog.ru/user/{}"
+    },
+    "chaos.social": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://chaos.social/@{}"
+    },
+    "couchsurfing": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.couchsurfing.com/people/{}"
+    },
+    "d3RU": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://d3.ru/user/{}/posts"
+    },
+    "dailykos": {
+      "classification": "excluded",
+      "reason": "Signup nickname validation endpoint",
+      "probe_url": "https://www.dailykos.com/signup/check_nickname?nickname={}"
+    },
+    "datingRU": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "http://dating.ru/{}"
+    },
+    "devRant": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://devrant.com/users/{}"
+    },
+    "drive2": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.drive2.ru/users/{}"
+    },
+    "eGPU": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://egpu.io/forums/profile/{}/"
+    },
+    "eintracht": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://community.eintracht.de/fans/{}"
+    },
+    "fixya": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.fixya.com/users/{}"
+    },
+    "fl": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.fl.ru/users/{}"
+    },
+    "forum_guns": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://forum.guns.ru/forummisc/blog/{}"
+    },
+    "freecodecamp": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://api.freecodecamp.org/api/users/get-public-profile?username={}"
+    },
+    "furaffinity": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.furaffinity.net/user/{}"
+    },
+    "geocaching": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.geocaching.com/p/default.aspx?u={}"
+    },
+    "habr": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://habr.com/ru/users/{}"
+    },
+    "hackster": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.hackster.io/{}"
+    },
+    "hunting": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.hunting.ru/forum/members/?username={}"
+    },
+    "igromania": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "http://forum.igromania.ru/member.php?username={}"
+    },
+    "interpals": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.interpals.net/{}"
+    },
+    "irecommend": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://irecommend.ru/users/{}"
+    },
+    "jbzd.com.pl": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://jbzd.com.pl/uzytkownik/{}"
+    },
+    "jeuxvideo": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.jeuxvideo.com/profil/{}?mode=infos"
+    },
+    "kofi": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://ko-fi.com/{}"
+    },
+    "kwork": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://kwork.ru/user/{}"
+    },
+    "last.fm": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://last.fm/user/{}"
+    },
+    "leasehackr": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://forum.leasehackr.com/u/{}/summary/"
+    },
+    "livelib": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.livelib.ru/reader/{}"
+    },
+    "mastodon.cloud": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://mastodon.cloud/@{}"
+    },
+    "mastodon.social": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://mastodon.social/@{}"
+    },
+    "mastodon.xyz": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://mastodon.xyz/@{}"
+    },
+    "mstdn.social": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://mstdn.social/@{}"
+    },
+    "mercadolivre": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.mercadolivre.com.br/perfil/{}"
+    },
+    "minds": {
+      "classification": "excluded",
+      "reason": "Registration username validation endpoint",
+      "probe_url": "https://www.minds.com/api/v3/register/validate?username={}"
+    },
+    "moikrug": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://moikrug.ru/{}"
+    },
+    "mstdn.io": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://mstdn.io/@{}"
+    },
+    "nairaland.com": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.nairaland.com/{}"
+    },
+    "n8n Community": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://community.n8n.io/u/{}/summary"
+    },
+    "nnRU": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://{}.www.nn.ru/"
+    },
+    "note": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://note.com/{}"
+    },
+    "npm": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.npmjs.com/~{}"
+    },
+    "omg.lol": {
+      "classification": "excluded",
+      "reason": "Address availability endpoint rather than public profile data",
+      "probe_url": "https://api.omg.lol/address/{}/availability"
+    },
+    "opennet": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.opennet.ru/~{}"
+    },
+    "osu!": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://osu.ppy.sh/users/{}"
+    },
+    "phpRU": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://php.ru/forum/members/?username={}"
+    },
+    "pikabu": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://pikabu.ru/@{}"
+    },
+    "Pinterest": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.pinterest.com/oembed.json?url=https://www.pinterest.com/{}/"
+    },
+    "pr0gramm": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://pr0gramm.com/api/profile/info?name={}"
+    },
+    "prog.hu": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://prog.hu/azonosito/info/{}"
+    },
+    "satsisRU": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://satsis.info/user/{}"
+    },
+    "sessionize": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://sessionize.com/{}"
+    },
+    "social.tchncs.de": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://social.tchncs.de/@{}"
+    },
+    "spletnik": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://spletnik.ru/user/{}"
+    },
+    "svidbook": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.svidbook.ru/user/{}"
+    },
+    "threads": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.threads.net/@{}"
+    },
+    "toster": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.toster.ru/user/{}/answers"
+    },
+    "tumblr": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://{}.tumblr.com/"
+    },
+    "uid": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "http://uid.me/{}"
+    },
+    "write.as": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://write.as/{}"
+    },
+    "xHamster": {
+      "classification": "public_profile_api",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://xhamster.com/users/{}?old_browser=true"
+    },
+    "znanylekarz.pl": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.znanylekarz.pl/{}"
+    },
+    "Platzi": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://platzi.com/p/{}/"
+    },
+    "BabyRu": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.baby.ru/u/{}"
+    },
+    "Wowhead": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://wowhead.com/user={}"
+    },
+    "addons.wago.io": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://addons.wago.io/user/{}"
+    },
+    "CurseForge": {
+      "classification": "public_profile_url",
+      "reason": "Static review: username-specific public profile or public profile data endpoint; live availability unverified",
+      "probe_url": "https://www.curseforge.com/members/{}/projects"
+    }
+  }
+}

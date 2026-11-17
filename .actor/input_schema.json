@@ -1,0 +1,67 @@
+{
+  "title": "Trace Them public profile lookup",
+  "description": "Supply usernames OR email. The wrapper enforces mutual exclusion. Email links remain source-scoped; candidate scans require explicit opt-in.",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "usernames": {
+      "title": "Exact usernames",
+      "type": "array",
+      "description": "One to 100 exact usernames; omit when supplying email. All share one request budget.",
+      "editor": "stringList",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "maxItems": 100
+    },
+    "email": {
+      "title": "Email",
+      "type": "string",
+      "description": "Email for public Gravatar resolution; omit when supplying usernames.",
+      "editor": "textfield",
+      "minLength": 1
+    },
+    "candidates": {
+      "title": "Scan inferred email candidates",
+      "type": "boolean",
+      "description": "Opt in to bounded nonrecursive username hypotheses. Matching accounts do not prove email ownership.",
+      "default": false
+    },
+    "candidateLimit": {
+      "title": "Candidate limit",
+      "type": "integer",
+      "description": "Maximum email-derived candidates when enabled.",
+      "default": 5,
+      "minimum": 1,
+      "maximum": 10
+    },
+    "sites": {
+      "title": "Selected platforms",
+      "type": "array",
+      "description": "Optional platform filter for username scans; source policy always applies.",
+      "editor": "stringList",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "maxItems": 1000
+    },
+    "maxRequests": {
+      "title": "Shared request budget",
+      "type": "integer",
+      "description": "Maximum actual profile-source HTTP requests, including retries and redirects. Apify storage operations are separate.",
+      "default": 500,
+      "minimum": 0,
+      "maximum": 100000
+    },
+    "offline": {
+      "title": "Disable profile-source network access",
+      "type": "boolean",
+      "description": "Validate and generate an unqueried report without profile-source requests. The Actor still reads input and stores output through Apify.",
+      "default": false
+    }
+  },
+  "additionalProperties": false
+}

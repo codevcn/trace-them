@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:trace-them:report:1.0",
+  "title": "Trace Them observation report 1.0",
+  "type": "object",
+  "required": ["schema_version", "tool", "observed_at", "input", "manifest", "request_budget", "summary", "findings", "resolutions", "candidates", "warnings"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "tool": {"type": "object", "required": ["name", "version"], "properties": {"name": {"const": "Trace Them"}, "version": {"type": "string"}}},
+    "observed_at": {"type": "string", "format": "date-time"},
+    "input": {"type": "object", "required": ["type", "value"], "properties": {"type": {"enum": ["username", "email"]}, "value": {"oneOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]}}},
+    "manifest": {"type": "object", "required": ["source", "selected_sites", "skipped"]},
+    "request_budget": {"type": ["object", "null"], "properties": {"limit": {"type": "integer", "minimum": 0}, "used": {"type": "integer", "minimum": 0}, "remaining": {"type": "integer", "minimum": 0}}},
+    "summary": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+    "findings": {"type": "array", "items": {"$ref": "#/$defs/finding"}},
+    "resolutions": {"type": "array", "items": {"type": "object", "required": ["provider", "status", "reason", "findings", "candidates", "evidence"], "properties": {"provider": {"type": "string"}, "status": {"$ref": "#/$defs/status"}, "reason": {"type": "string"}, "findings": {"type": "array", "items": {"$ref": "#/$defs/finding"}}, "candidates": {"type": "array", "items": {"$ref": "#/$defs/candidate"}}, "evidence": {"type": "array", "items": {"$ref": "#/$defs/evidence"}}}}},
+    "candidates": {"type": "array", "items": {"$ref": "#/$defs/candidate"}},
+    "warnings": {"type": "array", "items": {"type": "string"}}
+  },
+  "$defs": {
+    "status": {"enum": ["found", "not_found", "invalid", "blocked", "rate_limited", "error", "unknown", "unsupported", "missing_config", "budget_exhausted", "cancelled"]},
+    "evidence": {"type": "object", "required": ["kind", "source", "detail", "observed_at"], "properties": {"kind": {"type": "string"}, "source": {"type": "string"}, "detail": {"type": "string"}, "observed_at": {"type": "string", "format": "date-time"}}},
+    "candidate": {"type": "object", "required": ["username", "origin", "evidence", "platform"], "properties": {"username": {"type": "string"}, "origin": {"type": "string"}, "platform": {"type": ["string", "null"]}, "evidence": {"type": "array", "items": {"$ref": "#/$defs/evidence"}}}},
+    "finding": {"type": "object", "required": ["platform", "username", "profile_url", "status", "reason", "observed_at", "evidence", "association", "association_evidence", "origin"], "properties": {"platform": {"type": "string"}, "username": {"type": "string"}, "profile_url": {"type": "string"}, "status": {"$ref": "#/$defs/status"}, "reason": {"type": "string"}, "observed_at": {"type": "string", "format": "date-time"}, "http_status": {"type": ["integer", "null"]}, "origin": {"type": "string"}, "association": {"enum": ["unverified", "source_reported"]}, "evidence": {"type": "array", "items": {"$ref": "#/$defs/evidence"}}, "association_evidence": {"type": "array", "items": {"$ref": "#/$defs/evidence"}}, "identifier": {"type": ["string", "null"]}, "query_time": {"type": ["number", "null"]}}}
+  }
+}

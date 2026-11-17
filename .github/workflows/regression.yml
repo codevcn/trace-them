@@ -1,0 +1,39 @@
+name: Trace Them regression
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python: ['3.10', '3.11', '3.12', '3.13', '3.14']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install . pytest ruff build
+      - run: ruff check trace_them tests devel
+      - run: python -m build
+      - run: python -m pytest -q --junitxml=results.xml
+      - run: trace-them --version
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: results-${{ matrix.os }}-${{ matrix.python }}
+          path: results.xml
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t trace-them:test .
+      - run: docker run --rm trace-them:test --version
+      - run: docker run --rm trace-them:test find --username example --site GitHub --offline
+      - run: docker build -f .actor/Dockerfile -t trace-them:actor-test .
+      - run: docker run --rm --entrypoint trace-them trace-them:actor-test --version

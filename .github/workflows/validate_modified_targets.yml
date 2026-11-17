@@ -1,0 +1,19 @@
+name: Validate target definitions offline
+on:
+  pull_request:
+    paths:
+      - 'trace_them/resources/*.json'
+      - 'trace_them/manifest.py'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install . pytest
+      - run: python -m pytest tests/test_manifest.py tests/test_probes.py -q
+# Untrusted target changes never run inside pull_request_target with write access.

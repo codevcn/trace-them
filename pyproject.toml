@@ -1,0 +1,46 @@
+[build-system]
+requires = ["poetry-core>=2.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "trace-them"
+version = "0.1.0"
+description = "Evidence-aware public profile discovery by username and email"
+license = "MIT"
+authors = ["Trace Them contributors"]
+readme = "README.md"
+packages = [{include = "trace_them"}]
+include = ["trace_them/resources/*.json", "LICENSE", "NOTICE"]
+keywords = ["osint", "public-profiles", "username"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+requests = {version = ">=2.32,<3", extras = ["socks"]}
+openpyxl = ">=3.1,<4"
+jsonschema = ">=4.23,<5"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8.3,<10"
+pytest-xdist = ">=3.6,<4"
+ruff = ">=0.14,<1"
+build = ">=1.2,<2"
+
+[tool.poetry.scripts]
+trace-them = "trace_them.cli:main"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+exclude = [".work", ".venv"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]

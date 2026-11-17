@@ -1,0 +1,8 @@
+Trace Them is derived from Sherlock Project, version 0.16.2.
+Original project: https://github.com/sherlock-project/sherlock
+Copyright (c) 2019 Sherlock Project; MIT License (see LICENSE).
+
+Original authors and contributors retain their respective copyrights.
+Trace Them changes include an evidence-aware scanner, public-source policy,
+email resolution, reporting, packaging and independent regression tests.
+Trace Them is an independent derivative and does not imply endorsement by Sherlock.
