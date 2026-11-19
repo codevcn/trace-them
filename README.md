@@ -49,6 +49,35 @@ python -m pip install -e . pytest pytest-xdist ruff build
 
 This project also uses Poetry's dev group: `poetry install --with dev` is supported.
 
+## Uninstall
+
+### Windows Installer
+
+Uninstall via **Windows Settings → Apps → Installed apps → Trace Them → Uninstall**,
+the **Uninstall Trace Them** Start Menu shortcut, or by running `unins000.exe` in
+your installation folder (default `%LocalAppData%\Programs\Trace Them`):
+
+```console
+"%LocalAppData%\Programs\Trace Them\unins000.exe"
+```
+
+The uninstaller removes:
+- The installed `trace-them.exe` binary, `_internal` runtime, and Start Menu shortcuts.
+- The Trace Them entry added to your user `PATH`.
+- Managed global `trace-them` skill folders containing `.trace-them-managed` under
+  `~/.gemini/config/skills/trace-them/`, `~/.codex/skills/trace-them/`, and
+  `~/.claude/skills/trace-them/` (other skills and parent folders are untouched).
+
+Your saved HTML reports (default `D:\D-AppData\me-trace-them`) and user config
+(`%APPDATA%\trace-them\config.json`) are preserved so you do not lose past
+observations and can reinstall cleanly anytime.
+
+### Installed via pip
+
+```console
+python -m pip uninstall trace-them
+```
+
 ## Usage
 
 ```console
