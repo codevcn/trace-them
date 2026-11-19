@@ -17,6 +17,7 @@ def test_built_wheel_contains_runtime_resources_and_only_new_package():
         assert 'trace_them/resources/data.schema.json' in names
         assert 'trace_them/resources/report.schema.json' in names
         assert 'trace_them/resources/source-policy.json' in names
+        assert 'trace_them/resources/config.json' in names
         assert not any(name.startswith('sherlock_project/') for name in names)
         metadata_name = next(name for name in names if name.endswith('.dist-info/METADATA'))
         metadata = Parser().parsestr(wheel.read(metadata_name).decode('utf-8'))

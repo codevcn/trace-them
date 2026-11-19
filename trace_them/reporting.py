@@ -119,13 +119,17 @@ def write_reports(report, output_dir, formats, stem=None) -> list[Path]:
     directory.mkdir(parents=True, exist_ok=True)
     stem = safe_filename(stem if stem is not None else report["input"]["value"])
     formats = list(dict.fromkeys(formats))
-    if any(value not in ("json", "txt", "csv", "xlsx") for value in formats):
+    if any(value not in ("json", "txt", "csv", "xlsx", "html") for value in formats):
         raise ValueError("Unknown export format.")
     paths = []
     for fmt in formats:
         path = directory / f"{stem}.{fmt}"
         if fmt == "json":
             write_json(report, path)
+        elif fmt == "html":
+            from trace_them.html_report import render_html
+
+            _atomic_write(path, render_html(report).encode("utf-8"))
         elif fmt == "txt":
             lines = ["Trace Them — public profile observations",
                      "Account existence and association with the input are separate observations."]

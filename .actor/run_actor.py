@@ -25,7 +25,7 @@ def build_command(input_data: dict) -> list[str]:
     email = input_data.get("email")
     if (usernames is not None) == (email is not None):
         raise ValueError("Supply exactly one of usernames or email")
-    command = ["trace-them", "find", "--quiet"]
+    command = ["trace-them", "find", "--quiet", "--no-html"]
     if usernames is not None:
         if not isinstance(usernames, list) or not 1 <= len(usernames) <= 100:
             raise ValueError("usernames must be a list containing 1 to 100 usernames")

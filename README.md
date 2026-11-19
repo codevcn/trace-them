@@ -1,19 +1,44 @@
 # Trace Them
 
-Discover public profiles by exact username, or resolve an email through a
-documented public profile API. Results distinguish account existence from an
-association with the input. Trace Them is an independent MIT-licensed derivative
-of [Sherlock](https://github.com/sherlock-project/sherlock); see [NOTICE](NOTICE).
+Evidence-aware public profile discovery by exact username or email, with
+self-contained Atlassian-styled HTML reports, strict public-source policy, and
+a Windows installer bundling global AI Agent skills.
 
-## Install from this checkout
+Results distinguish account existence from an association with the input. Trace
+Them is an independent MIT-licensed derivative of
+[Sherlock](https://github.com/sherlock-project/sherlock); see [NOTICE](NOTICE).
+
+## Install
+
+### Windows Installer (recommended for CLI + AI Agents)
+
+Download `trace-them-setup-<version>.exe` from
+[GitHub Releases](https://github.com/codevcn/trace-them/releases) and verify its
+checksum against `SHA256SUMS.txt`. The Inno Setup installer packages the
+`--onedir` binary, adds `trace-them` to your user `PATH`, registers a standard
+Windows Uninstaller, and installs the global `trace-them` skill
+([skills/trace-them/SKILL.md](skills/trace-them/SKILL.md)) for:
+
+- **Antigravity**: `~/.gemini/config/skills/trace-them/`
+- **Codex**: `~/.codex/skills/trace-them/`
+- **Claude Code**: `~/.claude/skills/trace-them/`
+
+### Install from source checkout
 
 Requires Python **3.10–3.14**. The distribution name has not been checked or
-published on a registry. Install the local source:
+published on PyPI. Install the local source:
 
 ```console
 python -m pip install .
+trace-them -v
 trace-them --version
 python -m trace_them --help
+```
+
+To build the Windows `--onedir` bundle and Inno Setup installer from source:
+
+```console
+powershell -ExecutionPolicy Bypass -File devel\build_windows.ps1
 ```
 
 For development:
@@ -34,19 +59,51 @@ trace-them find --email user@example.com
 trace-them find --email user@example.com --candidates --candidate-limit 3 --site GitHub --max-requests 20
 trace-them find --username example --offline
 trace-them find --username example --site GitHub --json result.json --txt --csv --xlsx --output-dir reports
+trace-them find --username example --site GitHub --no-html
+trace-them config --show
+trace-them config --html-dir "D:\D-AppData\me-trace-them"
+trace-them config --check-updates off
+trace-them open
+trace-them clean report1.html report2.html
+trace-them clean --all
+trace-them check-update
+trace-them update
 ```
 
 - JSON is always written to stdout; progress is written to stderr. `--quiet`
-  suppresses progress. `--json PATH` saves another copy. No files are created
-  unless requested. TXT creation requires `--txt`.
+  suppresses scan progress (release update notices still print to stderr when
+  enabled and online). `--json PATH` saves another copy. Each `find` run also
+  writes a self-contained HTML visualization report into the configured HTML
+  folder (pass `--no-html` to skip or `--open` to launch immediately). TXT/CSV/XLSX
+  creation still requires `--txt`, `--csv`, or `--xlsx`.
+- Bundled default settings live in `trace_them/resources/config.json` (default
+  Windows folder `D:\D-AppData\me-trace-them`, POSIX fallback
+  `~/.local/share/trace-them/reports`, and `check_updates: true`). All user
+  overrides and cached release-check metadata are stored in the single
+  `config.json` (`TRACE_THEM_CONFIG` overrides its path). Use
+  `trace-them config --html-dir PATH` to change the HTML folder,
+  `trace-them config --check-updates on|off` to toggle automatic release checks,
+  `trace-them config --reset` to restore defaults, `trace-them open` to open the
+  newest HTML report, and `trace-them clean` (`FILE...` or `--all`, plus
+  optional `--dry-run`) to delete `.html` reports safely inside the folder.
+- **Release update checks & self-update:** When online and `check_updates` is
+  enabled (default), running CLI subcommands checks GitHub Releases
+  (`codevcn/trace-them`, cached inside `config.json` for 12 hours) and prints a
+  notice to `stderr` if a newer version is available (even when `--quiet` is
+  passed). Use `trace-them check-update` to force a live version check (showing
+  current version, latest version, release URL, and update command) and
+  `trace-them update` (for packaged Windows `.exe` installs) to download,
+  verify SHA-256, and run the latest installer silently. No update checks run
+  under `--offline`.
 - Exact usernames are the default. The explicit `{?}` pattern expands only to
   `_`, `-`, and `.`. There is no broad fuzzy search.
-- `--offline` (alias `--local`) disables **all network**, including resolvers and
-  remote manifests. It validates local configuration and marks profiles unknown;
-  it does not search cached profiles or manufacture negative results.
+- `--offline` (alias `--local`) disables **all network**, including resolvers,
+  remote manifests, and release update checks. It validates local configuration
+  and marks profiles unknown; it does not search cached profiles or manufacture
+  negative results.
 - Bundled site definitions are used by default. `--manifest PATH_OR_URL` accepts
   legacy Sherlock JSON; remote loading is explicit and budgeted. There are no
-  implicit version checks or exclusion downloads. NSFW sites require `--nsfw`.
+  implicit exclusion downloads. NSFW sites require `--nsfw`.
 - `--site` is repeatable and case-insensitive. Public-source policy exclusions
   cannot be overridden by selecting a site explicitly.
 - `--max-requests` defaults to 500 for the **whole run**: resolver calls, remote

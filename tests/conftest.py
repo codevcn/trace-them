@@ -1,4 +1,5 @@
 """Offline-first independent test fixtures."""
+import json
 import socket
 
 import pytest
@@ -15,6 +16,19 @@ def pytest_collection_modifyitems(config, items):
     for item in items:
         if 'online' in item.keywords:
             item.add_marker(pytest.mark.skip(reason='Live tests require --run-online.'))
+
+
+@pytest.fixture(autouse=True)
+def isolate_config(tmp_path_factory, monkeypatch):
+    root = tmp_path_factory.mktemp('trace_them_cfg')
+    config_file = root / 'config.json'
+    html_dir = root / 'html-reports'
+    config_file.write_text(
+        json.dumps({'html_output_dir': str(html_dir), 'check_updates': False}),
+        encoding='utf-8',
+    )
+    monkeypatch.setenv('TRACE_THEM_CONFIG', str(config_file))
+    return config_file, html_dir
 
 
 @pytest.fixture(autouse=True)
