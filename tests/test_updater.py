@@ -227,4 +227,7 @@ def test_agent_skill_file_and_packaging_specs_exist():
     assert Path("devel/trace-them.spec").is_file()
     assert Path("devel/installer.iss").is_file()
     assert Path("devel/build_windows.ps1").is_file()
+    assert Path("docs/images/trace-them.ico").is_file()
+    assert "trace-them.ico" in Path("devel/trace-them.spec").read_text(encoding="utf-8")
+    assert "SetupIconFile=" in Path("devel/installer.iss").read_text(encoding="utf-8")
     assert load_config()["check_updates"] is False  # isolated test fixture

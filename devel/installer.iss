@@ -1,5 +1,5 @@
 #ifndef MyAppVersion
-  #define MyAppVersion "0.2.0"
+  #define MyAppVersion "0.2.1"
 #endif
 
 #define MyAppName "Trace Them"
@@ -24,6 +24,7 @@ PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
 OutputDir=..\dist
 OutputBaseFilename=trace-them-setup-{#MyAppVersion}
+SetupIconFile=..\docs\images\trace-them.ico
 Compression=lzma2/max
 SolidCompression=yes
 WizardStyle=modern
