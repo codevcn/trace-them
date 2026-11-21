@@ -87,7 +87,8 @@ def _parser():
             "  trace-them find --email user@example.com --candidates --open\n"
             "  trace-them config --html-dir \"D:\\D-AppData\\me-trace-them\"\n"
             "  trace-them config --check-updates off\n"
-            "  trace-them open\n"
+            "  trace-them --open-html\n"
+            "  trace-them --open-html --print-path\n"
             "  trace-them clean report1.html report2.html\n"
             "  trace-them clean --all\n"
             "  trace-them check-update\n"
@@ -96,7 +97,11 @@ def _parser():
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument("-v", "--version", action="version", version=f"Trace Them {__version__}")
-    commands = parser.add_subparsers(dest="command", required=True)
+    parser.add_argument("--open-html", action="store_true", help="Open the newest HTML report in the configured folder.")
+    parser.add_argument("--html-dir", default=None, metavar="PATH", help="Override the configured HTML folder when using --open-html.")
+    parser.add_argument("--print-path", action="store_true", help="With --open-html, print the newest HTML report path without launching a browser.")
+    parser.add_argument("--quiet", action="store_true", help="Suppress status messages on stderr when using --open-html.")
+    commands = parser.add_subparsers(dest="command", required=False)
 
     find = commands.add_parser(
         "find",
@@ -147,17 +152,6 @@ def _parser():
     config_cmd.add_argument("--check-updates", type=_parse_toggle, metavar="{on,off}", help="Enable or disable automatic release checks on CLI runs (default: on).")
     config_cmd.add_argument("--reset", action="store_true", help="Reset configuration back to bundled defaults.")
     config_cmd.add_argument("--quiet", action="store_true", help="Suppress status messages on stderr.")
-
-    open_cmd = commands.add_parser(
-        "open",
-        help="Open the newest HTML report in the configured folder.",
-        description=(
-            "Locate and open the newest HTML visualization report in the configured HTML folder."
-        ),
-    )
-    open_cmd.add_argument("--html-dir", metavar="PATH", help="Inspect PATH instead of the configured HTML folder.")
-    open_cmd.add_argument("--print-path", action="store_true", help="Print the newest HTML report path to stdout without launching a browser.")
-    open_cmd.add_argument("--quiet", action="store_true", help="Suppress status messages on stderr.")
 
     clean_cmd = commands.add_parser(
         "clean",
@@ -460,12 +454,18 @@ def _run_update(args) -> int:
 def main(argv=None) -> int:
     parser = _parser()
     args = parser.parse_args(argv)
-    if args.command == "find":
+    if args.open_html:
+        if args.command is not None:
+            parser.error("--open-html cannot be combined with a subcommand.")
+        code = _run_open(args)
+    elif args.command is None:
+        if args.html_dir is not None or args.print_path:
+            parser.error("--html-dir and --print-path at the top level require --open-html.")
+        parser.error("A command or --open-html is required.")
+    elif args.command == "find":
         code = _run_find(parser, args)
     elif args.command == "config":
         code = _run_config(parser, args)
-    elif args.command == "open":
-        code = _run_open(args)
     elif args.command == "clean":
         code = _run_clean(parser, args)
     elif args.command == "check-update":

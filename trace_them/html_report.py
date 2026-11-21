@@ -12,14 +12,18 @@ from urllib.parse import urlsplit
 
 from trace_them.site_types import get_site_types
 
-# Iconify `lucide` (ISC license) SVGs retrieved via `iconify-cli get`.
+# Brand mark ("06. Orbital Footprint") + Iconify `lucide` (ISC license) SVGs retrieved via `iconify-cli get`.
 ICONS: dict[str, str] = {
-    "radar": (
-        '<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true">'
-        '<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">'
-        '<path d="M19.07 4.93A10 10 0 0 0 6.99 3.34M4 6h.01M2.29 9.62a10 10 0 1 0 19.02-1.27"/>'
-        '<path d="M16.24 7.76a6 6 0 1 0-8.01 8.91M12 18h.01m5.98-6.34a6 6 0 0 1-2.22 5.01"/>'
-        '<circle cx="12" cy="12" r="2"/><path d="m13.41 10.59l5.66-5.66"/></g></svg>'
+    "brand": (
+        '<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 100 100" fill="none" aria-hidden="true">'
+        '<g stroke="currentColor" stroke-linecap="round">'
+        '<path d="M 22 25 A 38 38 0 0 1 78 25" stroke-width="6.5"/>'
+        '<path d="M 78 75 A 38 38 0 0 1 22 75" stroke-width="6.5"/>'
+        '<path d="M 33 52 A 17 17 0 0 1 67 52" stroke-width="6"/>'
+        '<path d="M 41 56 A 9 9 0 0 1 59 56" stroke-width="6"/>'
+        '<path d="M 50 56 V 70" stroke-width="6"/></g>'
+        '<g fill="currentColor">'
+        '<circle cx="15" cy="50" r="6"/><circle cx="85" cy="50" r="6"/><circle cx="50" cy="28" r="5"/></g></svg>'
     ),
     "search": (
         '<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true">'
@@ -916,7 +920,7 @@ def render_html(report: dict) -> str:
 <body>
 <header class="ads-topbar">
   <div class="ads-brand">
-    <span class="ads-brand-mark">{_icon("radar")}</span>
+    <span class="ads-brand-mark">{_icon("brand")}</span>
     <span>{_esc(tool_name)}</span>
     <span class="ads-version-badge">Schema {_esc(schema_version)}</span>
   </div>

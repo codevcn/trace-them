@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/images/trace-them-logo.svg" alt="Trace Them — Orbital Footprint logo" width="96" height="96">
+</p>
+
 # Trace Them
 
 Evidence-aware public profile discovery by exact username or email, with
@@ -92,7 +96,8 @@ trace-them find --username example --site GitHub --no-html
 trace-them config --show
 trace-them config --html-dir "D:\D-AppData\me-trace-them"
 trace-them config --check-updates off
-trace-them open
+trace-them --open-html
+trace-them --open-html --print-path
 trace-them clean report1.html report2.html
 trace-them clean --all
 trace-them check-update
@@ -112,8 +117,8 @@ trace-them update
   `config.json` (`TRACE_THEM_CONFIG` overrides its path). Use
   `trace-them config --html-dir PATH` to change the HTML folder,
   `trace-them config --check-updates on|off` to toggle automatic release checks,
-  `trace-them config --reset` to restore defaults, `trace-them open` to open the
-  newest HTML report, and `trace-them clean` (`FILE...` or `--all`, plus
+  `trace-them config --reset` to restore defaults, `trace-them --open-html` to open the
+  newest HTML report (with optional `--print-path`), and `trace-them clean` (`FILE...` or `--all`, plus
   optional `--dry-run`) to delete `.html` reports safely inside the folder.
 - **Release update checks & self-update:** When online and `check_updates` is
   enabled (default), running CLI subcommands checks GitHub Releases

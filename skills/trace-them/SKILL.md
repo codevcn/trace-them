@@ -23,7 +23,7 @@ Operate `trace-them` reliably as an AI Agent. All structured outputs are written
 4. **Control HTML report side effects intentionally.**
    - By default, `trace-them find` writes an Atlassian-styled HTML report to the configured folder (`D:\D-AppData\me-trace-them` on Windows by default).
    - Pass `--no-html` when running purely programmatic lookups that do not need a saved HTML file.
-   - Pass `--open` (or run `trace-them open` afterward) when the user wants to view the report visually in a browser.
+   - Pass `--open` (or run `trace-them --open-html` afterward) when the user wants to view the report visually in a browser.
 5. **Respect privacy and offline constraints.**
    - Only scan `--candidates` from an email when the user explicitly wants inferred username expansion (`--candidates`, capped by `--candidate-limit 1..10`).
    - Use `--offline` whenever network calls must be disabled.
@@ -56,14 +56,14 @@ trace-them find --username <handle> --site GitHub --open --quiet
 trace-them find --username <handle> --site GitHub --json out.json --csv --xlsx --txt --output-dir reports --quiet
 ```
 
-### 2. Inspect & Open HTML Reports (`open`)
+### 2. Inspect & Open HTML Reports (`--open-html`)
 
 ```bash
 # Open the newest HTML report in the default browser
-trace-them open
+trace-them --open-html
 
 # Get the newest HTML file path without launching a browser
-trace-them open --print-path
+trace-them --open-html --print-path
 ```
 
 ### 3. Clean HTML Reports (`clean`)

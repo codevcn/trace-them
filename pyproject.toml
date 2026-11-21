@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "trace-them"
-version = "0.1.0"
+version = "0.2.0"
 description = "Evidence-aware public profile discovery by username and email"
 license = "MIT"
 authors = ["Trace Them contributors"]

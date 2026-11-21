@@ -105,23 +105,33 @@ def test_open_cli_selects_newest_html_and_supports_print_path(monkeypatch, capsy
     os.utime(newer, (now, now))
 
     assert find_latest_html(html_dir) == newer
-    assert main(["open", "--print-path"]) == 0
+    assert main(["--open-html", "--print-path"]) == 0
     assert Path(capsys.readouterr().out.strip()).resolve() == newer.resolve()
 
     launched = []
     monkeypatch.setattr("trace_them.cli.open_html_file", lambda path: launched.append(Path(path)))
-    assert main(["open"]) == 0
+    assert main(["--open-html"]) == 0
     assert launched == [newer.resolve()]
 
 
 def test_open_cli_returns_exit_code_2_when_folder_empty_or_missing(tmp_path, capsys):
-    assert main(["open", "--html-dir", str(tmp_path / "missing")]) == 2
+    assert main(["--open-html", "--html-dir", str(tmp_path / "missing")]) == 2
     assert "does not exist" in capsys.readouterr().err
 
     empty_dir = tmp_path / "empty"
     empty_dir.mkdir()
-    assert main(["open", "--html-dir", str(empty_dir)]) == 2
+    assert main(["--open-html", "--html-dir", str(empty_dir)]) == 2
     assert "No HTML report files" in capsys.readouterr().err
+
+
+def test_open_html_rejects_combining_with_subcommand_or_bare_print_path():
+    with pytest.raises(SystemExit) as exc1:
+        main(["--open-html", "config", "--show"])
+    assert exc1.value.code == 2
+
+    with pytest.raises(SystemExit) as exc2:
+        main(["--print-path"])
+    assert exc2.value.code == 2
 
 
 def test_html_renderer_escapes_untrusted_payloads_and_blocks_unsafe_links(tmp_path):
@@ -155,6 +165,7 @@ def test_html_renderer_escapes_untrusted_payloads_and_blocks_unsafe_links(tmp_pa
     assert "unverified" in html_doc
     assert "--ds-brand-bold: #0C66E4" in html_doc
     assert "<svg" in html_doc
+    assert "M 22 25 A 38 38 0 0 1 78 25" in html_doc
     assert 'id="scroll-top-btn"' in html_doc
     assert 'id="scroll-bottom-btn"' in html_doc
     assert 'behavior: "instant"' in html_doc
@@ -188,10 +199,9 @@ def test_site_type_classification_and_html_row_attributes():
 
 
 @pytest.mark.parametrize("argv,expected", [
-    (["--help"], ["find", "config", "open", "clean"]),
+    (["--help"], ["find", "config", "clean", "--open-html", "--html-dir", "--print-path"]),
     (["find", "--help"], ["--no-html", "--html-dir", "--open"]),
     (["config", "--help"], ["--html-dir", "--show", "--reset"]),
-    (["open", "--help"], ["--html-dir", "--print-path"]),
     (["clean", "--help"], ["--all", "--html-dir", "--dry-run"]),
 ])
 def test_cli_help_documents_html_commands_and_options(argv, expected, capsys):
